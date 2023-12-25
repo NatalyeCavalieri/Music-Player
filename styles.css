@@ -7,7 +7,7 @@
 }
 
 body {
-  background: rgba(15, 13, 19, 1);
+  background: rgb(49, 39, 22);
   font-family: "Roboto", sans-serif;
 }
 
@@ -48,11 +48,17 @@ body {
 .player {
   padding: 28px;
   border-radius: 10px;
-  background: #2a2141;
+  background: rgb(106, 66, 25);
+  background: linear-gradient(
+    90deg,
+    rgba(106, 66, 25, 1) 0%,
+    rgba(16, 98, 11, 1) 100%,
+    rgba(35, 99, 31, 1) 100%
+  );
 }
 .player img {
-  width: 84px;
-  height: 84px;
+  width: 100px;
+  height: 120px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -126,7 +132,7 @@ body {
   margin-top: 9.6px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 630px) {
   #app {
     display: flex;
     flex-direction: column;
@@ -138,15 +144,26 @@ body {
     justify-content: center;
     padding: 20px;
   }
+  #playerTwo{
+    display: flex;
+    justify-content: center;
+
+  }
+
+  #playerThree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .player {
     margin: 20px 20px;
   }
 
   .player img {
-  width: 90px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 10px;
-}
+    width: 90px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 }
